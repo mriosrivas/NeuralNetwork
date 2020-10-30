@@ -1,0 +1,5 @@
+https://mybinder.org/v2/gh/mriosrivas/NeuralNetwork/main
+
+!pip install -U scikit-learn
+
+jupyter nbconvert "Neural Network Presentation.ipynb" --to slides --post serve

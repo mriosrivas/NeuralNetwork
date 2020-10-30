@@ -1,0 +1,35 @@
+digraph G {
+
+        rankdir=LR
+	splines=line
+        
+        node [fixedsize=true, label=""];
+
+        subgraph cluster_0 {
+		color=white;
+		node [style=solid,color=blue4, shape=none];
+		x1[label=x];
+	}
+
+	subgraph cluster_1 {
+		color=white;
+		node [style=solid,color=red2, shape=square, width=0.8];
+		a12[label="w&#42;x &#43;b"];
+	}
+	
+	subgraph cluster_2 {
+		color=white;
+		node [style=solid,color=red2, shape=square, width=0.8];
+		z[label="sigma(z)"];
+	}
+	
+	subgraph cluster_3 {
+		color=white;
+		node [style=solid,color=red2, shape=none];
+		a[label="a"];
+	}
+	
+
+        x1 -> a12 -> z -> a;
+
+}
